@@ -1,0 +1,41 @@
+div {
+  margin: 0;
+  width: 30rem;
+}
+
+p {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+p.big-text {
+  font-family: 'Tusker Grotesk';
+  font-size: 8rem;
+  width: auto;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+p.small-text {
+  text-transform: lowercase;
+  font-family: 'Migra';
+  font-size: 1.2rem;
+  line-height: 1.5;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  p.big-text {
+    font-size: 6rem;
+    letter-spacing: 1px;
+  }
+
+  p.small-text {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+}

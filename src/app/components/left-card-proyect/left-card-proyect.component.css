@@ -1,0 +1,49 @@
+.container {
+  padding: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: -100%;
+  animation: aparecer 1s forwards;
+}
+
+.image {
+  justify-content: flex-start;
+}
+
+.image img {
+  transition: transform 0.4s ease;
+  filter: grayscale(100%);
+}
+
+.image img:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.resize-image {
+  max-width: 450px; /* Establece el ancho máximo deseado */
+  max-height: 200px; /* Establece la altura máxima deseada */
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+}
+
+div {
+  margin: 0;
+}
+
+@keyframes aparecer {
+  0% {
+    left: -100%; /* Empieza desde la izquierda */
+  }
+  100% {
+    left: 0; /* Termina en la posición normal */
+  }
+}
+
+.mostrar {
+  visibility: visible !important;
+}

@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+ }
+
+ .position{
+   text-align: center;
+   align-items: center;
+ }
+
+ .round-image {
+   display: inline-block;
+   border-radius: 50%;
+   width: 15rem;
+   height: 18rem;
+   border: 6px solid white;
+   object-fit: cover;
+ }

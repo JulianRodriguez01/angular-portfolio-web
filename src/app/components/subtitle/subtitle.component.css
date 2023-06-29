@@ -1,0 +1,31 @@
+.container {
+  display: inline-block;
+  padding: 1rem;
+  line-height: 0.4;
+}
+
+.internal-container {
+  display: block;
+}
+
+h2 {
+  font-family: 'NeueMontreal Bold';
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h3, a {
+  border: 0;
+  color: white;
+  font-family: 'Migra Ligth';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0;
+}
+
+a:hover {
+  color: purple;
+  text-decoration: solid;
+}

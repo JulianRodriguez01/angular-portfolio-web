@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Area</th>
+        <th>Lenguaje</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let item of data">
+        <td>{{ item.area }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.level }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

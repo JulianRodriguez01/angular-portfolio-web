@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.left-div {
+  position: relative;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.internal-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  padding: 1rem;
+}
+
+.right-div {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+p {
+  color: blanchedalmond;
+  font-family: 'Migra';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  margin-bottom: 0.1rem;
+  width: 90%;
+}
+
+.multiline-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 90%;
+  height: 10rem;
+  overflow-wrap: break-word;
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 20%;
+  max-height: 10rem;
+}
+
+multiline-input:focus,
+input:focus {
+  outline: none;
+  border-color: #042e5c68;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.container-email {
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 0.5rem;
+  }
+
+  .left-div{
+    flex:1;
+  }
+
+  .right-div{
+    flex: 0;
+  }
+
+  .left-div,
+  .right-div {
+    flex: 100%;
+  }
+
+  .internal-div {
+    position: static;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .container-email {
+    max-width: 90%;
+    width: 90%;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

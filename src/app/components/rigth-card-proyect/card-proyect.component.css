@@ -1,0 +1,30 @@
+.container {
+  padding: 1rem;
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  width: 22rem;
+  justify-content: flex-start;
+}
+
+.image img {
+  transition: transform 0.4s ease;
+  filter: grayscale(100%);
+}
+
+.image img:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.resize-image {
+  max-width: 450px; /* Establece el ancho máximo deseado */
+  max-height: 200px; /* Establece la altura máxima deseada */
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+}
